@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found - Glo Honey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .error-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #fff8ee 0%, #fff5e6 100%);
+        padding: 2rem;
+      }
+
+      .error-container {
+        max-width: 600px;
+        text-align: center;
+        background: white;
+        padding: 3rem 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(231, 140, 0, 0.1);
+      }
+
+      .error-icon {
+        font-size: 5rem;
+        color: #e78c00;
+        margin-bottom: 1.5rem;
+        animation: bounce 2s infinite;
+      }
+
+      .error-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5rem;
+        color: #6b2b00;
+        margin-bottom: 1rem;
+      }
+
+      .error-message {
+        color: #805500;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .error-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .error-button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .primary-button {
+        background: #e78c00;
+        color: white;
+      }
+
+      .primary-button:hover {
+        background: #d97800;
+        transform: translateY(-2px);
+      }
+
+      .secondary-button {
+        background: #fff8ee;
+        color: #e78c00;
+        border: 2px solid #e78c00;
+      }
+
+      .secondary-button:hover {
+        background: #e78c00;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      @media (max-width: 576px) {
+        .error-title {
+          font-size: 2rem;
+        }
+
+        .error-message {
+          font-size: 1rem;
+        }
+
+        .error-button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="error-section">
+      <div class="error-container">
+        <i class="fas fa-bee error-icon"></i>
+        <h1 class="error-title">Oops! Page Not Found</h1>
+        <p class="error-message">
+          Looks like this honeycomb is empty! The page you're looking for has
+          buzzed away or doesn't exist.
+        </p>
+        <div class="error-links">
+          <a href="index.html" class="error-button primary-button">
+            <i class="fas fa-home"></i> Back to Home
+          </a>
+          <a
+            href="#"
+            onclick="history.back()"
+            class="error-button secondary-button"
+          >
+            <i class="fas fa-arrow-left"></i> Go Back
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - Glo Honey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .faq-section {
+        padding: 8rem 5%;
+        background: linear-gradient(135deg, #fff8ee 0%, #fff5e6 100%);
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        box-shadow: 0 5px 15px rgba(231, 140, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-weight: 600;
+        color: #6b2b00;
+      }
+
+      .faq-question i {
+        color: #e78c00;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-answer {
+        padding: 0 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        color: #805500;
+        line-height: 1.8;
+      }
+
+      .faq-item.active .faq-question i {
+        transform: rotate(180deg);
+      }
+
+      .faq-item.active .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+        max-height: 500px;
+      }
+
+      .back-home {
+        display: inline-block;
+        margin: 2rem 0;
+        color: #6b2b00;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .back-home:hover {
+        color: #e78c00;
+      }
+
+      .back-home i {
+        margin-right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <!-- Copy the header from index.html -->
+    </header>
+
+    <section class="faq-section">
+      <div class="faq-container">
+        <a href="index.html" class="back-home">
+          <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find answers to common questions about our honey products
+        </p>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does your honey last?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our pure honey has an indefinite shelf life when properly
+                stored. Keep it in a cool, dry place and ensure the container is
+                tightly sealed. Natural crystallization may occur over time,
+                which is a sign of quality and can be reversed by gently warming
+                the honey.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you offer delivery services?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we offer delivery services across Ghana. Delivery fees vary
+                based on location. We typically deliver within 24-48 hours in
+                Accra and 2-4 business days for other regions. Contact us for
+                specific delivery information for your area.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is your honey raw and unprocessed?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, our honey is 100% raw and unprocessed. We only gently
+                filter it to remove any bee wax or natural debris. This
+                preserves all the natural enzymes, pollen, and beneficial
+                properties of the honey.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What payment methods do you accept?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We accept various payment methods including Mobile Money (MTN,
+                Vodafone, AirtelTigo), bank transfers, and cash on delivery.
+                Payment details will be provided during checkout.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Is your honey FDA approved?</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, all our honey products are FDA approved and regularly
+                tested to ensure they meet the highest quality standards. We
+                maintain strict quality control throughout our harvesting and
+                packaging process.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <!-- Copy the footer from index.html -->
+    </footer>
+
+    <script>
+      // FAQ Accordion functionality
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          faqItem.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

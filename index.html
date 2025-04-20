@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glo Honey - Premium Natural Honey Products in Ghana</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta
+      name="description"
+      content="Experience pure, natural honey from Ghana. Our premium honey products are ethically sourced, FDA approved, and delivered nationwide. Shop raw honey in various sizes."
+    />
+    <meta
+      name="keywords"
+      content="honey, natural honey, pure honey, Ghana honey, raw honey, organic honey, Glo Honey"
+    />
+    <meta name="author" content="Glo Honey" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Glo Honey - Premium Natural Honey Products"
+    />
+    <meta
+      property="og:description"
+      content="Experience pure, natural honey from Ghana. Shop our premium honey products."
+    />
+    <meta property="og:image" content="https://www.glohoney.com/hero1.jpg" />
+    <meta property="og:url" content="https://www.glohoney.com" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Glo Honey - Premium Natural Honey" />
+    <meta
+      name="twitter:description"
+      content="Experience pure, natural honey from Ghana. Shop our premium honey products."
+    />
+    <meta name="twitter:image" content="https://www.glohoney.com/hero1.jpg" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.glohoney.com" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Glo Honey",
+        "image": "https://www.glohoney.com/logo.png",
+        "description": "Premium natural honey products in Ghana",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Okpoi Boi Street",
+          "addressLocality": "Teshie Manheanne",
+          "addressRegion": "Greater Accra",
+          "addressCountry": "Ghana"
+        },
+        "priceRange": "GH₵₵",
+        "telephone": "+233545096853",
+        "email": "info@glohoney.com",
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-16:00",
+        "sameAs": ["https://www.facebook.com/glohoney2"]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo-container">
+          <picture>
+            <source srcset="images/logo.webp" type="image/webp" />
+            <img src="images/logo.png" alt="Glo Honey Logo" class="logo" />
+          </picture>
+        </div>
+
+        <div class="branding">
+          <h1>Glo Honey</h1>
+          <p class="slogan">Taste the Golden Goodness</p>
+        </div>
+
+        <div class="cart-container">
+          <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+
+          <!-- Add Cart Modal -->
+          <div class="cart-modal">
+            <div class="cart-modal-content">
+              <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-cart">&times;</button>
+              </div>
+              <div class="cart-items"></div>
+              <div class="cart-footer">
+                <p class="delivery-notice">* Delivery Fee Not Inclusive</p>
+                <div class="cart-total">
+                  <span>Total:</span>
+                  <span class="total-amount">GH₵ 0.00</span>
+                </div>
+                <button class="checkout-btn" disabled>
+                  <i class="fab fa-whatsapp"></i> Checkout
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#products">Shop</a></li>
+          <li><a href="#about-section">About Us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#benefits">Honey Benefits</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="shop-intro" id="hero">
+      <div class="shop-container">
+        <div class="shop-content">
+          <h2>Pure, Natural Honey</h2>
+          <p class="shop-description">
+            Experience the authentic taste of nature with our premium honey,
+            carefully harvested from local beekeepers. Each drop carries the
+            essence of pristine wildflowers and nature's goodness.
+          </p>
+          <a href="#products" class="cta-button">Shop Now</a>
+          <div class="approval-text">
+            <i class="fas fa-certificate"></i>
+            Food and Drugs Authority Approved
+          </div>
+        </div>
+        <div class="shop-image">
+          <picture>
+            <source srcset="hero1.webp" type="image/webp" />
+            <img src="hero1.jpg" alt="Pure Natural Honey" loading="lazy" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="container">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <picture>
+                <source srcset="250ml.webp" type="image/webp" />
+                <img
+                  src="250ml.jpg"
+                  alt="Glo Honey 250ml"
+                  class="product-image"
+                />
+              </picture>
+              <div class="product-volume">
+                <span>250 ml</span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pure Honey</h3>
+              <div class="product-price">
+                <span class="current-price">GH₵ 35.00</span>
+                <span class="original-price">GH₵ 45.00</span>
+                <span class="discount-badge">-22%</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="1">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+            <div class="quantity-selector" id="quantity-selector-1">
+              <button class="quantity-btn minus-btn">−</button>
+              <input
+                type="number"
+                class="quantity-input"
+                value="1"
+                min="1"
+                max="99"
+              />
+              <button class="quantity-btn plus-btn">+</button>
+              <button class="confirm-btn">Add</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <picture>
+                <source srcset="500ml.webp" type="image/webp" />
+                <img
+                  src="500ml.jpg"
+                  alt="Glo Honey 500ml"
+                  class="product-image"
+                />
+              </picture>
+              <div class="product-volume">
+                <span>500 ml</span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pure Honey</h3>
+              <div class="product-price">
+                <span class="current-price">GH₵ 65.00</span>
+                <span class="original-price">GH₵ 80.00</span>
+                <span class="discount-badge">-19%</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="2">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+            <div class="quantity-selector" id="quantity-selector-2">
+              <button class="quantity-btn minus-btn">−</button>
+              <input
+                type="number"
+                class="quantity-input"
+                value="1"
+                min="1"
+                max="99"
+              />
+              <button class="quantity-btn plus-btn">+</button>
+              <button class="confirm-btn">Add</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <picture>
+                <source srcset="2.5l.webp" type="image/webp" />
+                <img
+                  src="2.5l.jpg"
+                  alt="Glo Honey 2500ml"
+                  class="product-image"
+                />
+              </picture>
+              <div class="product-volume">
+                <span>2500 ml</span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pure Honey</h3>
+              <div class="product-price">
+                <span class="current-price">GH₵ 250.00</span>
+                <span class="original-price">GH₵ 300.00</span>
+                <span class="discount-badge">-17%</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="3">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+            <div class="quantity-selector" id="quantity-selector-3">
+              <button class="quantity-btn minus-btn">−</button>
+              <input
+                type="number"
+                class="quantity-input"
+                value="1"
+                min="1"
+                max="99"
+              />
+              <button class="quantity-btn plus-btn">+</button>
+              <button class="confirm-btn">Add</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image-container">
+              <picture>
+                <source srcset="5l.webp" type="image/webp" />
+                <img
+                  src="5l.jpg"
+                  alt="Glo Honey 5000ml"
+                  class="product-image"
+                />
+              </picture>
+              <div class="product-volume">
+                <span>5000 ml</span>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Pure Honey</h3>
+              <div class="product-price">
+                <span class="current-price">GH₵ 500.00</span>
+                <span class="original-price">GH₵ 600.00</span>
+                <span class="discount-badge">-17%</span>
+              </div>
+              <button class="add-to-cart-btn" data-product-id="4">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+            <div class="quantity-selector" id="quantity-selector-4">
+              <button class="quantity-btn minus-btn">−</button>
+              <input
+                type="number"
+                class="quantity-input"
+                value="1"
+                min="1"
+                max="99"
+              />
+              <button class="quantity-btn plus-btn">+</button>
+              <button class="confirm-btn">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text-container">
+            <h2 class="about-title">About Glo Honey</h2>
+            <div class="about-text-wrapper">
+              <p class="about-text">
+                At Glo Honey, we're passionate about bees and the liquid gold
+                they produce. Our honey is harvested using traditional methods
+                that respect the bees and preserve all the natural goodness of
+                raw honey.
+              </p>
+              <p class="about-text hidden-text">
+                Founded in 2015, our mission is to provide the purest honey
+                while supporting sustainable beekeeping practices. All our honey
+                is ethically sourced from our own apiaries and carefully
+                selected partner beekeepers.
+              </p>
+            </div>
+            <button class="cta-button" id="learn-more-btn">Learn More</button>
+          </div>
+          <div class="about-image-container">
+            <div class="about-image-wrapper">
+              <picture>
+                <source srcset="hero.webp" type="image/webp" />
+                <img
+                  src="hero.jpg"
+                  alt="Beekeeping at Glo Honey"
+                  class="about-image"
+                />
+              </picture>
+            </div>
+            <div class="honeycomb-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honey Benefits Section -->
+    <section class="honey-benefits" id="benefits">
+      <div class="benefits-container">
+        <h2 class="section-title">Honey Benefits</h2>
+        <p class="section-subtitle">
+          Discover the natural goodness of Glo Honey
+        </p>
+
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <h3>Heart Health</h3>
+            <p>
+              Rich in antioxidants that help reduce the risk of heart disease
+              and improve blood circulation.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Brain Function</h3>
+            <p>
+              Contains nutrients that may help prevent cellular damage in the
+              brain and improve memory.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Immune Support</h3>
+            <p>
+              Natural antibacterial and antimicrobial properties that boost
+              immunity and fight infections.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <h3>Cough Relief</h3>
+            <p>
+              Soothes sore throats and suppresses coughs, making it a natural
+              remedy for cold symptoms.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-running"></i>
+            </div>
+            <h3>Energy Boost</h3>
+            <p>
+              Natural sugars provide an immediate energy boost, perfect for
+              pre-workout or morning routines.
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-spa"></i>
+            </div>
+            <h3>Skin Health</h3>
+            <p>
+              Moisturizes skin and provides anti-aging benefits when used both
+              internally and externally.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefits-footer">
+          <p>
+            Experience the natural healing power of pure organic honey from Glo
+            Honey.
+          </p>
+          <a href="#products" class="btn btn-primary">Shop Our Honey</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Real experiences from our honey lovers</p>
+
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-carousel" id="testimonialCarousel">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "Glo Honey has become a morning ritual for me. The flavor is
+                  incomparable to anyone I've tried before. Plus, my seasonal
+                  allergies have improved since I started taking local honey
+                  daily!"
+                </p>
+                <h4 class="testimonial-name">Amadu Johnson</h4>
+                <p class="testimonial-location">Tema, Greater Accra</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "As a professional chef, I'm extremely particular about my
+                  ingredients. Glo's natural honey has an exceptional depth of
+                  flavor that elevates my desserts to a whole new level. The
+                  quality is consistent, and my customers always notice the
+                  difference."
+                </p>
+                <h4 class="testimonial-name">Ryan Ameko</h4>
+                <p class="testimonial-location">Teshie, Greater Accra</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">
+                  "I've been using Glo's raw honey as part of my skincare
+                  routine, mixing it into homemade face masks. The difference in
+                  my skin's hydration and glow is remarkable! Plus, knowing it's
+                  ethically sourced makes me feel even better about supporting
+                  this company."
+                </p>
+                <h4 class="testimonial-name">Immanuella Tettey</h4>
+                <p class="testimonial-location">Cape Coast, Central Region</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "I switched to Glo Honey after tasting it in a friend's house
+                  in 2022 and have falling in love with their honey since then.
+                  I will recommend them ant time and any day. My kids absolutely
+                  love it!"
+                </p>
+                <h4 class="testimonial-name">Vida Adepa</h4>
+                <p class="testimonial-location">Kumasi, Ashanti Region</p>
+              </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">
+                  "As an athlete, I'm always looking for natural energy sources.
+                  Glo's honey has become my pre-workout secret weapon. It
+                  provides clean, sustained energy without the crash, and the
+                  customer service team is incredibly knowledgeable and
+                  helpful!"
+                </p>
+                <h4 class="testimonial-name">Confidence Sunu</h4>
+                <p class="testimonial-location">Koforidua, Eastern Region</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-footer">
+          <h3 class="testimonial-cta">
+            Join our growing community of satisfied honey enthusiasts
+          </h3>
+          <a href="#whatsappForm" class="btn btn-secondary"
+            >Share Your Experience</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">We'd love to hear from you</p>
+
+        <div class="contact-wrapper">
+          <!-- Contact Information Side -->
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>Okpoi Boi Street, Teshie Manheanne</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p><a href="mailto:info@glohoney.com">info@glohoney.com</a></p>
+                <p>
+                  <a href="mailto:g.sey@glohoney.com">g.sey@glohoney.com</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="info-content">
+                <h4>Call/WhatsApp</h4>
+                <p><a href="https://wa.me/233545096853">+233 545 096 853</a></p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/glohoney2?mibextid=rS40aB7S9Ucbxw6v"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://wa.me/233545096853"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="business-hours">
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 8am - 6pm</p>
+              <p>Saturday: 9am - 4pm</p>
+              <p>Sunday: Closed</p>
+              <p class="online-orders">Online orders welcomed 24/7</p>
+            </div>
+          </div>
+
+          <!-- Contact Form Side -->
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="whatsappForm">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help you?"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group form-checkbox">
+                <input type="checkbox" id="consent" name="consent" required />
+                <label for="consent"
+                  >I agree to be contacted by Glo Honey via WhatsApp</label
+                >
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <picture>
+            <source srcset="logo.webp" type="image/webp" />
+            <img src="logo.png" alt="Glo Honey Logo" class="logo-img" />
+          </picture>
+          <p>Pure, Organic & Natural Honey</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#hero" class="active">Home</a></li>
+              <li><a href="#products">Shop</a></li>
+              <li><a href="#about-section">About Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="#benefits">Benefits</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="#products">250ml Pure Honey</a></li>
+              <li><a href="#products">500ml Pure Honey</a></li>
+              <li><a href="#products">2.5L Pure Honey</a></li>
+              <li><a href="#products">5L Pure Honey</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="shipping.html">Delivery/Shipping Policy</a></li>
+              <li><a href="returns.html">Returns & Refunds</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for special offers and updates</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+          <div class="subscription-message"></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/glohoney2?mibextid=rS40aB7S9Ucbxw6v"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/233545096853"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+        <p class="copyright">
+          &copy; 2025 Design, Developed and Powered by PH Technologies. All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
