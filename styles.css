@@ -132,6 +132,7 @@ body {
   width: 100%;
   background: linear-gradient(to right, #6b2b00 0%, #805500 100%);
   position: relative;
+  min-height: 50px;
 }
 
 .nav-menu {
@@ -142,6 +143,11 @@ body {
   padding: 0;
   align-items: center;
   justify-content: center;
+}
+
+.nav-menu li {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-menu a {
@@ -173,6 +179,15 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 1000;
+}
+
+.mobile-menu-toggle:hover {
+  color: #ffd86f;
+}
+
+.mobile-menu-toggle:focus {
+  outline: 2px solid #ffd86f;
+  outline-offset: 2px;
 }
 
 /* ==================== CART MODAL ==================== */
@@ -2408,6 +2423,23 @@ body {
   }
 }
 
+/* ==================== RESPONSIVE - LARGE TABLETS (Landscape) ==================== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Keep horizontal nav but make it more compact */
+  .nav-menu a {
+    padding: 0.9rem 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  .branding h1 {
+    font-size: 1.8rem;
+  }
+  
+  .slogan {
+    font-size: 0.85rem;
+  }
+}
+
 /* ==================== RESPONSIVE - TABLETS ==================== */
 @media (max-width: 992px) {
   body {
@@ -2433,6 +2465,12 @@ body {
 
   .slogan {
     font-size: 0.85rem;
+  }
+
+  /* Tablet nav - still horizontal but smaller */
+  .nav-menu a {
+    padding: 0.9rem 0.8rem;
+    font-size: 0.9rem;
   }
 
   .shop-intro {
@@ -2607,12 +2645,31 @@ body {
     order: 0;
   }
 
+  /* Mobile menu toggle - MUST BE VISIBLE */
   .mobile-menu-toggle {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
   }
 
+  /* Main nav container for mobile */
+  .main-nav {
+    min-height: 50px;
+    position: relative;
+  }
+
+  /* Mobile navigation menu */
   .nav-menu {
     position: fixed;
     top: 120px;
@@ -2621,12 +2678,13 @@ body {
     height: calc(100vh - 120px);
     background: linear-gradient(180deg, #6b2b00 0%, #4a1e00 100%);
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 0;
     transition: left 0.4s ease;
     z-index: 998;
     overflow-y: auto;
     justify-content: flex-start;
     gap: 0;
+    margin: 0;
   }
 
   .nav-menu.active {
@@ -2635,6 +2693,8 @@ body {
 
   .nav-menu li {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-menu a {
@@ -2643,6 +2703,7 @@ body {
     width: 100%;
     text-align: left;
     font-size: 1.1rem;
+    display: block;
   }
 
   .nav-menu a:hover,
@@ -2961,6 +3022,13 @@ body {
     right: -6px;
   }
 
+  /* Small mobile menu toggle */
+  .mobile-menu-toggle {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.8rem;
+    right: 0.8rem;
+  }
+
   .nav-menu {
     top: 110px;
     height: calc(100vh - 110px);
@@ -3242,6 +3310,13 @@ body {
 
   .logo {
     height: 35px;
+  }
+
+  /* Extra small mobile menu toggle */
+  .mobile-menu-toggle {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.6rem;
+    right: 0.5rem;
   }
 
   .nav-menu {
